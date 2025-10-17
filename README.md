@@ -4,7 +4,7 @@
 - Analysing_BiasBios.ipynb: analysing complete BiasBios Dataset, visulally for gender label comparisons
 - gender_profession.ipynb: Focusing on three professions Surgeon(male-dominated), Nurse(female-dominated), Physician(with gender parity),
  and genertating 3 separate DataSets for 3 professions
-- gender_words_LogisticRegression.ipynb: extracting gender specific words on 3 raw datasets using countVectorizer and Logistic Regression.
+- gender_words_LogisticRegression.ipynb: extracting gender specific top 20 words on 3 raw datasets using countVectorizer and Logistic Regression.
 - 
 
 ### csvs
@@ -14,6 +14,9 @@
 - top_gender_words_Nurse.csv
 - top_gender_words_Physician.csv
 - top_gender_words_Surgeon.csv
+- $
+- $
+- $
 
 
 
@@ -30,6 +33,10 @@
    * One female-dominated: **Nurse**
    * One with gender parity: **Physician**
 4. **Split dataset** per occupation to prepare for generating CVs and cover letters.--done
+5. Extracting top 20 words on raw datasets of 3 professions using countvectorizer and Logistic regression.
+
+
+
 
 ✅ **Output:** 3 subsets of the dataset (one per occupation) with gender labels.--done
 
