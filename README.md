@@ -1,5 +1,5 @@
 
-## Notebooks/ CSVs added:
+## Notebooks/CSVs added:
 ### src
 - Analysing_BiasBios.ipynb: analysing complete BiasBios Dataset, visulally for gender label comparisons
 - gender_profession.ipynb: Focusing on three professions Surgeon(male-dominated), Nurse(female-dominated), Physician(with gender parity),
@@ -20,6 +20,7 @@
 
 
 
+----
 
 ## Provisorisch Workflow for BIAS Project
 
@@ -34,10 +35,6 @@
    * One with gender parity: **Physician**
 4. **Split dataset** per occupation to prepare for generating CVs and cover letters.--done
 5. Extracting top 20 words on raw datasets of 3 professions using countvectorizer and Logistic regression.
-
-
-
-
 ✅ **Output:** 3 subsets of the dataset (one per occupation) with gender labels.--done
 
 ---
