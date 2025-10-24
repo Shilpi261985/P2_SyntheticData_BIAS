@@ -5,7 +5,11 @@
 - gender_profession.ipynb: Focusing on three professions Surgeon(male-dominated), Nurse(female-dominated), Physician(with gender parity),
  and genertating 3 separate DataSets for 3 professions
 - gender_words_LogisticRegression.ipynb: extracting gender specific top 20 words on 3 raw datasets using countVectorizer and Logistic Regression.
-- 
+- equal_gendered_ds.ipynb: notebook to have balanced bios for 3 profession with equal gender labels (100 each)
+- JobAD_generate_Nurse.ipynb: Notebook for realistic job ad generation  for Nurse
+- JobAD_generate_Physician.ipynb: Notebook for realistic job ad generation  for Physician
+- JobAD_generate_Surgeon.ipynb: Notebook for realistic job ad generation  for Surgeon
+
 
 ### csvs
 - nurse_ds.csv
