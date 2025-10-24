@@ -1,7 +1,7 @@
 
 ## Notebooks/CSVs added:
 ### src
-- Analysing_BiasBios.ipynb: analysing complete BiasBios Dataset, visulally for gender label comparisons
+- Analysing_BiasBios.ipynb: analysing complete BiasBios Dataset, visually for gender label comparisons
 - gender_profession.ipynb: Focusing on three professions Surgeon(male-dominated), Nurse(female-dominated), Physician(with gender parity),
  and genertating 3 separate DataSets for 3 professions
 - gender_words_LogisticRegression.ipynb: extracting gender specific top 20 words on 3 raw datasets using countVectorizer and Logistic Regression.
