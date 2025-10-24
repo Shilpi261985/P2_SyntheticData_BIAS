@@ -9,6 +9,7 @@
 - JobAD_generate_Nurse.ipynb: Notebook for realistic job ad generation  for Nurse
 - JobAD_generate_Physician.ipynb: Notebook for realistic job ad generation  for Physician
 - JobAD_generate_Surgeon.ipynb: Notebook for realistic job ad generation  for Surgeon
+- 
 
 
 ### csvs
@@ -24,8 +25,14 @@
 - nurses_extracted.csv: csv with skills, education, experience, countires column
 - physician_extracted.csv
 - surgeon_extracted.csv
+- 
 
 
+### texts_generated
+- nurse_job_ad.txt: generated job ad with realistic text using extracted skills, education, countiries and experience
+- physician_job_ad.txt:
+- surgeon_job_ad.txt:
+- 
 
 ----
 
