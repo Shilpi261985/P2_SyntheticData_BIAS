@@ -32,7 +32,14 @@
 - nurse_job_ad.txt: generated job ad with realistic text using extracted skills, education, countiries and experience
 - physician_job_ad.txt:
 - surgeon_job_ad.txt:
-- 
+- $
+- $
+- $
+- $
+- $
+
+
+
 
 ----
 
