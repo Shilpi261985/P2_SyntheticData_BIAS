@@ -12,15 +12,18 @@
 
 
 ### csvs
-- nurse_ds.csv
+- nurse_ds.csv: original dataset profession specific
 - physician_ds.csv
 - surgeon_ds.csv
-- top_gender_words_Nurse.csv
+- top_gender_words_Nurse.csv: Extracted top genedered words using Logistic Regression on original dataset
 - top_gender_words_Physician.csv
 - top_gender_words_Surgeon.csv
-- $
-- $
-- $
+- Nurse_balanced_200.csv: csv with equal gendered bios (100 each)
+- Physician_balanced_200.csv
+- Surgeon_balanced_200.csv
+- nurses_extracted.csv: csv with skills, education, experience, countires column
+- physician_extracted.csv
+- surgeon_extracted.csv
 
 
 
