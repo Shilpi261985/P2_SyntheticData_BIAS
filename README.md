@@ -47,16 +47,16 @@
 
 ### **Step 1: Data Preparation**
 
-1. **Load the BiasBios dataset** (28 occupations, gender labels).--done
+1. **Load the BiasBios dataset** (28 occupations, gender labels).--DONE
 2. **Map occupations and genders** into consistent labels (e.g., male/female, occupation groups).
 3. **Select three occupations** 
 
    * One male-dominated: **Surgeon**
    * One female-dominated: **Nurse**
    * One with gender parity: **Physician**
-4. **Split dataset** per occupation to prepare for generating CVs and cover letters.--done
+4. **Split dataset** per occupation to prepare for generating CVs and cover letters.--DONE
 5. Extracting top 20 words on raw datasets of 3 professions using countvectorizer and Logistic regression.
-✅ **Output:** 3 subsets of the dataset (one per occupation) with gender labels.--done
+✅ **Output:** 3 subsets of the dataset (one per occupation) with gender labels.--DONE
 
 ---
 
@@ -64,7 +64,7 @@
 
 1. **Design a modular framework** to generate:
 
-   * Job ads for the three occupations
+   * Job ads for the three occupations... DONE
    * Corresponding CVs and cover letters for all individuals in your subset (~300 records)
 2. **Incorporate sensitive and proxy words**:
 
