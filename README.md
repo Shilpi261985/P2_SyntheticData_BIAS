@@ -1,3 +1,17 @@
+## Research Questions:
+- RQ1: (Conceptual – Bias Detection) To what extent do gender-related words (sensitive and proxy terms) influence occupation classification models trained on synthetic recruitment texts (CVs, cover letters, job ads)?
+- RQ2: (Technical – Bias Mitigation Effectiveness) How effective is the removal or masking of sensitive and proxy words in reducing gender bias in model predictions, while preserving task performance?
+- RQ3: (Conceptual – Linguistic Patterns Across Genders) What linguistic or stylistic differences emerge between male- and female-associated CVs and cover letters, and how do these correlate with occupation type (male-dominated, female-dominated, gender-parity)?
+- RQ4: (Technical – Synthetic Data Design & Robustness) How does controlling configurable attributes (skills, education, country, personal traits) in synthetic text generation affect bias detection and mitigation outcomes?
+
+§§
+§
+§
+
+§
+§
+
+
 
 ## Notebooks/CSVs added:
 ### src
