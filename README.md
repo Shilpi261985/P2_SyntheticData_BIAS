@@ -4,14 +4,11 @@
 - RQ3: (Conceptual – Linguistic Patterns Across Genders) What linguistic or stylistic differences emerge between male- and female-associated CVs and cover letters, and how do these correlate with occupation type (male-dominated, female-dominated, gender-parity)?
 - RQ4: (Technical – Synthetic Data Design & Robustness) How does controlling configurable attributes (skills, education, country, personal traits) in synthetic text generation affect bias detection and mitigation outcomes?
 
-§§
 §
 §
-
 §
 §
-
-
+§
 
 ## Notebooks/CSVs added:
 ### src
