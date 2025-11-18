@@ -19,6 +19,8 @@
 - JobAD_generate_Physician.ipynb: Notebook for realistic job ad generation  for Physician
 - JobAD_generate_Surgeon.ipynb: Notebook for realistic job ad generation  for Surgeon
 - generate_CV_CL_base.ipynb: ntb for baseline of CV CL generation
+- sensitive_proxy_words.ipynb: ntb for visulaising word cloud on incorporated proxy and gender sensitive terms on extracted bios dataset
+- sensitive_proxy_words_CV_CL.ipynb: ntb for visulaising word cloud on incorporated proxy and gender sensitive terms on generated CV and CL baseline dataset
 
 
 ### csvs
@@ -46,11 +48,6 @@
 - surgeon_job_ad.txt:
 - $
 - $
-- $
-- $
-- $
-
-
 
 
 ----
@@ -78,11 +75,11 @@
 
    * Job ads for the three occupations... DONE
    * Corresponding CVs and cover letters for all individuals in your subset (~300 records)...DONE
-2. **Incorporate sensitive and proxy words**:
+2. **Incorporate sensitive and proxy words**:  DONE
 
    * **Sensitive words**: Directly related to gender (`female`, `male`)
    * **Proxy words**: Indirect indicators (`parental leave`, `nursing`, `sports coach`)
-3. **Make the framework configurable**:
+3. **Make the framework configurable**:   DONE
 
    * Include specific word lists
    * Configure skills, education, work experience
