@@ -18,7 +18,7 @@
 - JobAD_generate_Nurse.ipynb: Notebook for realistic job ad generation  for Nurse
 - JobAD_generate_Physician.ipynb: Notebook for realistic job ad generation  for Physician
 - JobAD_generate_Surgeon.ipynb: Notebook for realistic job ad generation  for Surgeon
-- 
+- generate_CV_CL_base.ipynb: ntb for baseline of CV CL generation
 
 
 ### csvs
@@ -34,6 +34,9 @@
 - nurses_extracted.csv: csv with skills, education, experience, countires column
 - physician_extracted.csv
 - surgeon_extracted.csv
+- CV_CL/generated_cv_cl_nurse_base.csv,
+       /generated_cv_cl_physician_base.csv,
+       /generated_cv_cl_surgeon_base.csv
 - 
 
 
@@ -74,7 +77,7 @@
 1. **Design a modular framework** to generate:
 
    * Job ads for the three occupations... DONE
-   * Corresponding CVs and cover letters for all individuals in your subset (~300 records)
+   * Corresponding CVs and cover letters for all individuals in your subset (~300 records)...DONE
 2. **Incorporate sensitive and proxy words**:
 
    * **Sensitive words**: Directly related to gender (`female`, `male`)
