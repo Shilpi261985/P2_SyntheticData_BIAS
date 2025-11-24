@@ -1,0 +1,162 @@
+=== skills_extracted ===
+Critical Care
+
+
+=== education_extracted ===
+ADN
+BSN
+Bachelor of Science in Nursing
+CRNA
+DNP
+Doctor of Nursing Practice
+LPN
+LVN
+Licensed Practical Nurse
+MSN
+Master of Science in Nursing
+NP
+Nurse Practitioner
+RN
+Registered Nurse
+
+
+=== countries_extracted ===
+AR
+Aberdeen
+Agata
+Alaska
+Aloha
+Amman
+Anchorage
+Arkansas
+Arlington Heights
+Ash Flat
+Ashtanga
+Australia
+Azusa
+Beaufort
+Boston
+Bronx
+Brownwood
+Budapest
+Burlington
+California
+Chicago
+Colorado
+Decorah
+Doctorate
+Egypt
+England
+Ethiopia
+Florida
+Fort Smith
+Freeport
+Georgia
+Guatemala
+Haiti
+Hawaii
+IV
+Indiana
+Iowa
+Jackson-madison County
+Jamaica
+Jillian
+Johnston
+Kansas
+Kansas City
+Kinesio Taping
+Knoxville
+Kuwait
+Leary
+Manchester
+Medina
+Miami
+Midland
+Missouri
+Monroe
+Music
+NURSE
+New Hampshire
+New Jersey
+New Orleans
+New York
+New York City
+Newark
+Newcastle
+North Carolina
+North Clinic
+Nurse Anesthesia
+Nurse Practitioner
+Nursing
+Oakland
+Ohio
+Ontario
+Orlando
+P.a.
+Pa.
+Perth
+Philippines
+Phoenix
+Portland
+Pre-anesthesia
+Rwanda
+Sacramento
+Saint Louis
+Saint Louis Deu Nord
+San Antonio
+San Francisco
+Saratoga Springs
+Seattle
+Shelbyville
+South Bend
+South Carolina
+South Dakota
+Stephen
+Tanya
+Tanzania
+Texas
+Thedacare
+Tulsa
+United Kingdom
+Valdosta
+Wales
+Whitman County
+Xiaojin
+neuralgia
+the State of Michigan
+the United States
+
+
+=== experience_years ===
+10.0
+11.0
+12.0
+13.0
+14.0
+15.0
+16.0
+17.0
+18.0
+19.0
+2.0
+20.0
+21.0
+22.0
+23.0
+24.0
+25.0
+26.0
+29.0
+3.0
+30.0
+33.0
+36.0
+4.0
+42.0
+5.0
+6.0
+7.0
+8.0
+9.0
+
+
