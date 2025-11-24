@@ -1,0 +1,205 @@
+=== skills_extracted ===
+Minimally Invasive Surgery
+Neurosurgery
+
+
+=== education_extracted ===
+Doctor of Medicine
+FRCS
+Fellow of the American College of Surgeons
+General Surgery Residency
+MBBS
+MD
+
+
+=== countries_extracted ===
+Ahmedabad
+Atlanta
+Austin
+Bahrain
+Baltimore
+Barbados
+Berlin
+Bethesda
+Bihar
+Boerne
+Boston
+Bradenton
+Brazil
+Bronx
+California
+Cambridge
+Canada
+Carson City
+Chicago
+Children
+Chinchwad
+Cigna
+Cincinnati
+Colonelganj
+Colorado
+Cook County
+Coronado
+D.C.
+Dallas
+Delhi
+Denver
+Dhankawadi
+Edmond
+Elgin
+England
+Fatehgunj
+Florida
+Fort Worth
+France
+Georgia
+German
+Ghodasar
+Goodland
+Grand Junction
+Grey
+Gujarat
+Hayanga
+Houston
+Hyderabad
+Illinois
+India
+Indianapolis
+Indora
+Jackson
+Jacksonville
+Jaipur
+Jordan
+Kanpur
+Khyora
+Kissimmee
+Kolkata
+Kothrud
+LA
+Laguna Hills
+Lancaster
+Lenoir City
+London
+Londrina
+Long Beach
+Los Angeles
+M.S.
+MD
+MI
+Madar
+Manhattan
+Maryland
+Massachusetts
+Melbourne
+Merritt Island
+Mexico City
+Miami
+Michigan
+Morgan City
+Mumbai
+NJ
+NY
+Nacharam
+Nairobi
+New Delhi
+New Jersey
+New York
+New York City
+New York-Presbyterian Hospital
+Newark
+OH
+Ohio
+Olpad
+Orthopaedic Surgery
+PA
+Papua New Guinea
+Perth
+Perumbavoor
+Pitampura, Delhi
+Plastic
+Plymouth
+Pune
+Safety Harbor
+Salt Lake City
+San Antonio
+San Francisco
+San Jose
+San Lorenzo
+Sao Paulo
+Sawangi
+Scottsdale
+Scranton
+Select City
+Seoul
+Shivaji Park
+Sidney
+South Korea
+South Sudan
+St. Joseph's
+St. Louis
+St. Michael Parish
+Ste
+Surgery
+Sydney
+TN
+Texas
+Thabo Mbeki
+Thailand
+Toledo
+Toothwise
+Toronto
+UAE
+UK
+USA
+Ulsoor
+United states
+Vadodara
+Valencia
+Vashi
+Vikas Nagar
+Wardha
+Washington
+West Columbia
+Wyoming
+Yelahanka
+Yemen
+neuralgia
+the United States
+
+
+=== experience_years ===
+10.0
+11.0
+12.0
+13.0
+15.0
+18.0
+19.0
+20.0
+21.0
+22.0
+23.0
+24.0
+25.0
+26.0
+27.0
+28.0
+29.0
+31.0
+32.0
+33.0
+36.0
+39.0
+41.0
+42.0
+43.0
+47.0
+48.0
+5.0
+51.0
+56.0
+7.0
+8.0
+9.0
+
+
