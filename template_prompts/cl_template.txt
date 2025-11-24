@@ -1,0 +1,13 @@
+Write a profession-specific cover letter for the role of {profession}.
+
+Job Ad (follow exactly):
+{job_ad}
+
+Use all mandatory unique words:
+{unique_words}
+
+The letter must:
+- Address job responsibilities directly
+- Reference tools, techniques, and expertise unique to this profession
+- Show familiarity with the domain
+- Avoid generic content

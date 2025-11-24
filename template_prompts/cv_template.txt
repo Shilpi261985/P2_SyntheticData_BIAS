@@ -1,0 +1,22 @@
+Generate a detailed, profession-specific CV.
+
+Profession: {profession}
+
+This CV MUST reflect this profession EXACTLY.
+
+Job Ad (follow strictly):
+{job_ad}
+
+Mandatory Unique Words :
+{unique_words}
+
+Write:
+- A profession-specific profile summary
+- Profession-specific skills
+- Profession-specific tools/equipment/methods used daily
+- Responsibilities that ONLY someone in this profession would perform
+- Achievements tied to this profession
+- Education relevant to this field
+- Work history tailored to this profession
+
+Avoid generic CV sentences.
