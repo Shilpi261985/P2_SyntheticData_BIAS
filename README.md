@@ -52,7 +52,7 @@
 
 ----
 
-## Provisorisch Workflow for BIAS Project
+## Provisional Workflow for BIAS Project
 
 ### **Step 1: Data Preparation**
 
