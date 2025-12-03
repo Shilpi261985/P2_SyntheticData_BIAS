@@ -1,3 +1,5 @@
+## Timeline for submission: 18 January 2026
+
 ## Research Questions:
 - RQ1: (Conceptual – Bias Detection) To what extent do gender-related words (sensitive and proxy terms) influence occupation classification models trained on synthetic recruitment texts (CVs, cover letters, job ads)?
       --This addresses the existence and degree of gender bias in the text classification model. It examines whether models rely on gender-linked or stereotypical cues (e.g., nurturing, competitive, mother, leadership) to infer gender. •	Quantify how often sensitive/proxy words appear in top predictive features for gender. logistic regression
