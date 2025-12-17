@@ -93,7 +93,7 @@
 2. **Incorporate sensitive and proxy words**:  DONE
 
    * **Sensitive words**: Directly related to gender (`female`, `male`)
-   * **Proxy words**: Indirect indicators (`parental leave`, `nursing`, `sports coach`)
+   * **Proxy words**: Indirect indicators (`parental leave`, `nursing`, `bfreastfeeding`, `mentorship`)
 3. **Make the framework configurable**:   DONE
 
    * Include specific word lists
@@ -110,7 +110,7 @@
 2. **Train a classifier** for:
 
    * **Gender prediction**
-   * **Occupation prediction**
+   
 3. **Baseline model:** Train on the generated texts **with sensitive and proxy words included**.
 
 ✅ **Output:** Classifier capable of predicting gender and occupation from text.
