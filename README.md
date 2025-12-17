@@ -117,9 +117,9 @@
 
 ---
 
-### **Step 4: Interpretability with LIME**
+### **Step 4: Interpretability with Logistic Regression**
 
-1. Use **LIME for text classification** to analyze **which words influence gender predictions**:
+1. Use **Logistic Regression for text classification** to analyze **which words influence gender predictions**:
 
    * Identify **sensitive and proxy words** that contribute most to biased predictions
 2. Loop over multiple samples and aggregate results to get **top predictive words per gender**.
@@ -133,7 +133,7 @@
 1. **Mask or remove sensitive and proxy words** in texts.
 2. **Re-generate CVs and cover letters** (or modify existing ones).
 3. **Re-train the classifier** on this modified dataset.
-4. **Re-run LIME** to analyze how the model’s behavior changes.
+4. **Re-run Logistic Regression** to analyze how the model’s behavior changes.
 
 ✅ **Output:** Classifier predictions and explanations after bias mitigation.
 
@@ -143,7 +143,7 @@
 
 1. Compare **gender prediction accuracy** before and after mitigation.
 2. Compare **occupation prediction accuracy** to ensure masking doesn’t break task performance.
-3. Compare **LIME outputs**:
+3. Compare **Logistic Regression outputs**:
 
    * Are sensitive/proxy words no longer predictive?
    * Are other words driving predictions?
@@ -172,12 +172,7 @@
 
 ---
 
-### **Optional Step 8: Extendability**
 
-1. Make  framework **language-agnostic**: design text generation modularly.
-2. Ensure new occupations or new languages can be added easily in the future.
-
----
 
 ### **Suggested Execution Order**
 
