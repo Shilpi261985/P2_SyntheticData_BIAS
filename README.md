@@ -75,8 +75,10 @@
 1. **Design a modular framework** to generate:
 
    * Job ads for the three occupations.
-     * used balanced dataset of professions to extract skill set, education set, experience in years and countries mentioned in bios
-    * 
+     * used balanced dataset of professions to extract skill set, education set, experience in years and countries mentioned in bios using PhraseMatcher library of spacy.matcher
+     * saved extracted attributes in separate dataset named as [profession]_extracted.csv
+     * 
+      
    * 
    * src: folder 'JobAd_generation'
    * Corresponding CVs and cover letters for all individuals in your subset (~300 records)...DONE
