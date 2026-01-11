@@ -1,29 +1,6 @@
 ## Timeline for submission: 18 January 2026
 
-## Research Questions:
-- RQ1: (Conceptual – Bias Detection) To what extent do gender-related words (sensitive and proxy terms) influence occupation classification models trained on synthetic recruitment texts (CVs, cover letters, job ads)?
-      --This addresses the existence and degree of gender bias in the text classification model. It examines whether models rely on gender-linked or stereotypical cues (e.g., nurturing, competitive, mother, leadership) to infer gender. •	Quantify how often sensitive/proxy words appear in top predictive features for gender. logistic regression
-- RQ2: (Technical – Bias Mitigation Effectiveness) How effective is the removal or masking of sensitive and proxy words in reducing gender bias in model predictions, while preserving task performance?
-      --Tests the trade-off between fairness (less bias) and utility (accurate predictions). Classifier metrics, LIME comparison. classification accuracy, LIME feature importances (before vs. after). •	Measure reduction in biased word importance.
-
-- RQ3: (Conceptual – Linguistic Patterns Across Genders) What linguistic or stylistic differences emerge between male- and female-associated CVs and cover letters
-(male-dominated, female-dominated, gender-parity)?
-      --Investigates language patterns and stereotypes across the three professions (Surgeon, Nurse, Physician). Use TF-IDF + logistic regression feature importance. TF-IDF, keyword analysis. •	Compare top weighted words for male vs. female across occupations. •	Use LIME or SHAP to confirm interpretability at instance level.
-- RQ4: (Technical – Synthetic Data Design & Robustness) How does controlling configurable attributes (skills, education, country, personal traits) in synthetic text generation affect bias detection and mitigation outcomes?
-      --Tests how much control one have in generating fair yet realistic data. It explores the impact of the modular framework parameters (e.g., education lists, country distributions, proxy word injection) on both model bias and text realism. •	Generate different synthetic datasets:
- o	 With vs. without sensitive/proxy words.
- o	 With balanced vs. unbalanced demographics.
- •	 Measure:
- o	 Bias in predictions.
- o	 LIME feature stability.
- o	 Linguistic diversity metrics (lexical richness, readability).
-  Synthetic data experiments, ablation tests
-
-* §
-* §
-
-
-## Notebooks/CSVs added:
+# Notebooks/CSVs added:
 ### src
 - Analysing_BiasBios.ipynb: analysing complete BiasBios Dataset, visually for gender label comparisons
 - gender_profession.ipynb: Focusing on three professions Surgeon(male-dominated), Nurse(female-dominated), Physician(with gender parity),
@@ -67,19 +44,20 @@
 
 ----
 
-## Provisional Workflow for BIAS Project
+##  Workflow for BIAS Project
 
 ### **Step 1: Data Preparation**
 
-1. **Load the BiasBios dataset** (28 occupations, gender labels).--DONE
-2. **Map occupations and genders** into consistent labels (e.g., male/female, occupation groups).
-3. **Select three occupations** 
+1. **Load the BiasBios dataset** (28 occupations, gender labels).
+         src: Analysing_BiasBios.ipynb
+3. **Map occupations and genders** into consistent labels (e.g., male/female, occupation groups).
+4. **Select three occupations** 
 
    * One male-dominated: **Surgeon**
    * One female-dominated: **Nurse**
    * One with gender parity: **Physician**
-4. **Split dataset** per occupation to prepare for generating CVs and cover letters.--DONE
-5. Extracting top 20 words on raw datasets of 3 professions using countvectorizer and Logistic regression.
+5. **Split dataset** per occupation to prepare for generating CVs and cover letters.--DONE
+6. Extracting top 20 words on raw datasets of 3 professions using countvectorizer and Logistic regression.
 ✅ **Output:** 3 subsets of the dataset (one per occupation) with gender labels.--DONE
 
 ---
