@@ -60,7 +60,7 @@
    
    **Split dataset** per occupation to prepare for generating CVs and cover letters.
    
-   ** src: gender_profession.ipynb
+   * src: gender_profession.ipynb
 6.
 7. Extracting top 20 words on raw datasets of 3 professions using countvectorizer and Logistic regression.
 ✅ **Output:** 3 subsets of the dataset (one per occupation) with gender labels.--DONE
