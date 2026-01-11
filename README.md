@@ -61,9 +61,11 @@
    **Split dataset** per occupation to prepare for generating CVs and cover letters.
    
    * src: gender_profession.ipynb
-6.
-7. Extracting top 20 words on raw datasets of 3 professions using countvectorizer and Logistic regression.
-✅ **Output:** 3 subsets of the dataset (one per occupation) with gender labels.--DONE
+3. **Extracting 200 datas in each dataset for each profession with balanced labels(100 male/100 female)
+   * src: equal_gendered_ds.ipynb
+4. Extracting top 20 words on raw datasets of 3 professions using countvectorizer and Logistic regression.
+   * src: gender_words_LogisticRegression.ipynb
+✅ **Output:** 3 subsets of the dataset (one per occupation) with gender labels.
 
 ---
 
@@ -71,7 +73,11 @@
 
 1. **Design a modular framework** to generate:
 
-   * Job ads for the three occupations... DONE
+   * Job ads for the three occupations.
+    * used balanced dataset of professions to extract skill set, education set, experience in years and countries mentioned in bios
+    * 
+   * 
+   * src: folder 'JobAd_generation'
    * Corresponding CVs and cover letters for all individuals in your subset (~300 records)...DONE
 2. **Incorporate sensitive and proxy words**:  DONE
 
