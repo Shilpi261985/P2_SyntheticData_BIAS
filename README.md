@@ -49,7 +49,7 @@
 ### **Step 1: Data Preparation**
 
 1. **Load the BiasBios dataset** (28 occupations, gender labels).
-         src: Analysing_BiasBios.ipynb
+         - src: Analysing_BiasBios.ipynb
 3. **Map occupations and genders** into consistent labels (e.g., male/female, occupation groups).
 4. **Select three occupations** 
 
