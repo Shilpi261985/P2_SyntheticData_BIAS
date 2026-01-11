@@ -51,13 +51,14 @@
 1. **Load the BiasBios dataset** (28 occupations, gender labels).
    * src: Analysing_BiasBios.ipynb
 2. **Map occupations and genders** into consistent labels (e.g., male/female, occupation groups).
+   
    **Select three occupations** 
 
    * One male-dominated: **Surgeon**
    * One female-dominated: **Nurse**
    * One with gender parity: **Physician**
    * src: gender_profession.ipynb
-6. **Split dataset** per occupation to prepare for generating CVs and cover letters.--DONE
+6. **Split dataset** per occupation to prepare for generating CVs and cover letters.
 7. Extracting top 20 words on raw datasets of 3 professions using countvectorizer and Logistic regression.
 ✅ **Output:** 3 subsets of the dataset (one per occupation) with gender labels.--DONE
 
