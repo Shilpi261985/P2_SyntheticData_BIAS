@@ -65,6 +65,7 @@
    * src: equal_gendered_ds.ipynb
 4. Extracting top 20 words on raw datasets of 3 professions using countvectorizer and Logistic regression.
    * src: gender_words_LogisticRegression.ipynb
+     
 ✅ **Output:** 3 subsets of the dataset (one per occupation) with gender labels.
 
 ---
@@ -74,7 +75,7 @@
 1. **Design a modular framework** to generate:
 
    * Job ads for the three occupations.
-    * used balanced dataset of professions to extract skill set, education set, experience in years and countries mentioned in bios
+     * used balanced dataset of professions to extract skill set, education set, experience in years and countries mentioned in bios
     * 
    * 
    * src: folder 'JobAd_generation'
