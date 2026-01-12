@@ -36,7 +36,7 @@
 1. **Design a modular framework** to generate:
 
    * Job ads for the three occupations.
-     * used balanced dataset of professions to extract skill set, education set, experience in years and countries mentioned in bios using PhraseMatcher library of spacy.matcher
+     * used balanced dataset of professions to extract skill set, education set, experience in years and countries mentioned in bios using PhraseMatcher library of spacy.matcher and "GPE" (Geopolitical Entity)
      * saved extracted attributes in separate dataset named as [profession]_extracted.csv
        * csvs: folder 'extracted_attributes_per_profession'
      * generated job ad per profession using unique attributes extracted originally and using predefined job template. 
