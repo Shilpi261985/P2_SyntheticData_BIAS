@@ -1,47 +1,5 @@
 ## Timeline for submission: 18 January 2026
 
-# Notebooks/CSVs added:
-### src
-- Analysing_BiasBios.ipynb: analysing complete BiasBios Dataset, visually for gender label comparisons
-- gender_profession.ipynb: Focusing on three professions Surgeon(male-dominated), Nurse(female-dominated), Physician(with gender parity),
- and genertating 3 separate DataSets for 3 professions
-- gender_words_LogisticRegression.ipynb: extracting gender specific top 20 words on 3 raw datasets using countVectorizer and Logistic Regression.
-- equal_gendered_ds.ipynb: notebook to have balanced bios for 3 profession with equal gender labels (100 each)
-- JobAD_generate_Nurse.ipynb: Notebook for realistic job ad generation  for Nurse
-- JobAD_generate_Physician.ipynb: Notebook for realistic job ad generation  for Physician
-- JobAD_generate_Surgeon.ipynb: Notebook for realistic job ad generation  for Surgeon
-- generate_CV_CL_base.ipynb: ntb for baseline of CV CL generation
-- sensitive_proxy_words.ipynb: ntb for visulaising word cloud on incorporated proxy and gender sensitive terms on extracted bios dataset
-- sensitive_proxy_words_CV_CL.ipynb: ntb for visulaising word cloud on incorporated proxy and gender sensitive terms on generated CV and CL baseline dataset
-
-
-### csvs
-- nurse_ds.csv: original dataset profession specific
-- physician_ds.csv
-- surgeon_ds.csv
-- top_gender_words_Nurse.csv: Extracted top genedered words using Logistic Regression on original dataset
-- top_gender_words_Physician.csv
-- top_gender_words_Surgeon.csv
-- Nurse_balanced_200.csv: csv with equal gendered bios (100 each)
-- Physician_balanced_200.csv
-- Surgeon_balanced_200.csv
-- nurses_extracted.csv: csv with skills, education, experience, countires column
-- physician_extracted.csv
-- surgeon_extracted.csv
-- CV_CL/generated_cv_cl_nurse_base.csv,
-       /generated_cv_cl_physician_base.csv,
-       /generated_cv_cl_surgeon_base.csv
-- 
-
-
-### texts_generated
-- nurse_job_ad.txt: generated job ad with realistic text using extracted skills, education, countiries and experience
-- physician_job_ad.txt:
-- surgeon_job_ad.txt:
-- $
-- $
-
-
 ----
 
 ##  Workflow for BIAS Project
@@ -87,20 +45,25 @@
     
    * Corresponding CVs and cover letters for all individuals in your subset (~300 records)
      * generate CV and cover leters using bios saved in [profession]_extracted.csv, generated job ads and prompt defined in code. Used model GPT-4o from AZURE.
-     * saved these generated CVs and Coverletters (200 for each profession (with 100 for each label))
+     * saved these generated CVs and Coverletters (200 for each profession (with 100 for each gendered label))
      * csvs: CV_CL/base
 
-2. **Incorporate sensitive and proxy words**:  DONE
+2. **Incorporate sensitive and proxy words**: 
 
    * **Sensitive words**: Directly related to gender (`female`, `male`)
    * **Proxy words**: Indirect indicators (`parental leave`, `nursing`, `breastfeeding`, `mentorship`)
-      * saved unique/sensitive/proxy words in
-         texts_generated/[profession]/unique_words/selected.txt
-3. **Make the framework configurable**:   DONE
+      
+3. **Make the framework configurable**: 
 
    * Include specific word lists
    * Configure skills, education, work experience
-   * Configure personal information (e.g., nationality, location)
+   * Configure personal information (e.g. location)
+     * saved unique/sensitive/proxy words in
+         texts_generated/[profession]/unique_words/selected.txt
+     * used this unique words list for generating modular CVs and cover letters (50 for each profession (with 25 for each gendered label))
+      * src: modular_CV_CL_generation.ipynb
+      * template_prompts: cv_template.txt, cl_template.txt
+      * csvs: CV_CL/modular_generated
 
 ✅ **Output:** Synthetic dataset with job ads, CVs, cover letters, and controlled sensitive/proxy words.
 
@@ -108,34 +71,33 @@
 
 ### **Step 3: Model Training / Classification**
 
-1. **Vectorize text data** (job ads, CVs, cover letters) using `CountVectorizer` or `TF-IDF`.
-2. **Train a classifier** for:
+1. **Vectorize text data** (original bios) using `TF-IDF`.
+2. **Train a classifier** using Logistic Regression for:
 
    * **Gender prediction**
+   * * Identify **sensitive and proxy words** that contribute most to biased predictions
+  * src: vectorizer_classifier/original_bios
    
 3. **Baseline model:** Train on the generated texts **with sensitive and proxy words included**.
+   * vectorizing and classification using Logistic regression on generated baseline of CV and cover letters
+   * src: vectorizer_classifier/base_CV_CL
+4. **Modular generation: ** Train and classify on generated modular texts of CV/CL
+   * src: vectorizer_classifier/modular_CV_CL
 
 ✅ **Output:** Classifier capable of predicting gender and occupation from text.
-
----
-
-### **Step 4: Interpretability with Logistic Regression**
-
-1. Use **Logistic Regression for text classification** to analyze **which words influence gender predictions**:
-
-   * Identify **sensitive and proxy words** that contribute most to biased predictions
-2. Loop over multiple samples and aggregate results to get **top predictive words per gender**.
 
 ✅ **Output:** Explanation of model behavior, highlighting biased words.
 
 ---
 
-### **Step 5: Bias Mitigation**
+### **Step 4: Bias Mitigation**
 
 1. **Mask or remove sensitive and proxy words** in texts.
-2. **Re-generate CVs and cover letters** (or modify existing ones).
-3. **Re-train the classifier** on this modified dataset.
-4. **Re-run Logistic Regression** to analyze how the model’s behavior changes.
+    * masked predefined genedered words lists in generated baseline of CV/CL for each profession
+3. **Modify existing CV/CL**.
+    * csvs: CV_CL/masked
+5. **Re-train the classifier** on this modified dataset using BERT model and AutoTokenizer
+    * src: masking_BiasMitigation
 
 ✅ **Output:** Classifier predictions and explanations after bias mitigation.
 
@@ -143,46 +105,21 @@
 
 ### **Step 6: Evaluation and Comparison**
 
-1. Compare **gender prediction accuracy** before and after mitigation.
+1. Compare **gender prediction accuracy** after mitigation.
 2. Compare **occupation prediction accuracy** to ensure masking doesn’t break task performance.
-3. Compare **Logistic Regression outputs**:
 
-   * Are sensitive/proxy words no longer predictive?
-   * Are other words driving predictions?
 4. Document metrics:
 
    * Accuracy, F1-score
    * Number of biased words contributing to predictions
-   * Changes in LIME feature importance
+   * Changes in LIME feature importance (high confidence, low confidence)
+  
+ * src: masking_BiasMitigation
 
 ✅ **Output:** Quantitative and qualitative evaluation of bias mitigation.
 
 ---
 
-### **Step 7: Validation and Documentation**
-
-1. Ensure synthetic data quality:
-
-   * Realistic CVs and cover letters
-   * Job ads match occupation and skills
-   * Sensitive/proxy word injection as intended
-2. Create **plots or tables** showing:
-
-   * Word importance per gender before and after mitigation
-   * Comparison of gender and occupation predictions
-3. Document the **framework, configuration options, and test results**.
-
----
-
-
-
-### **Suggested Execution Order**
-
-1. Load and preprocess dataset → select 3 occupations.
-2. Generate synthetic data with sensitive/proxy words.
-3. Train baseline classifier and analyze with LIME.
-4. Mask sensitive/proxy words → re-train → analyze with LIME.
-5. Compare results → document findings.
 
 
 
