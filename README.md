@@ -103,7 +103,7 @@
 
 ---
 
-### **Step 6: Evaluation and Comparison**
+### **Step 5: Evaluation and Comparison**
 
 1. Compare **gender prediction accuracy** after mitigation.
 2. Compare **occupation prediction accuracy** to ensure masking doesn’t break task performance.
