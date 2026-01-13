@@ -3,10 +3,9 @@
 ----
 ## Environment setup
 1. This project requires a Python-based environment configured for large-scale text generation using Azure OpenAI services. The implementation has been tested with Python 3.10+.
-2. -  Core dependencies include pandas for data handling,
-   - python-dotenv for secure environment variable management,
-   - and the official openai Python SDK for interacting with Azure-hosted language models
-3. The following environment variables must be defined in a .env file (e.g., .env.job) or set at the system level:
+2. pip install spacy pandas numpy scikit-learn transformers datasets evaluate torch accelerate matplotlib seaborn lime
+3. 
+4. The following environment variables must be defined in a .env file (e.g., .env.job) or set at the system level:
    
 AZURE_CHTDP_SWED_ENDPOINT_API_KEY: Azure OpenAI API key
 
@@ -14,7 +13,41 @@ AZURE_CHTDP_SWED_ENDPOINT: Azure OpenAI endpoint URL
 
 AZURE_CHAT_DEPLOYMENT_NAME: Deployment name of the chat model
 
-5. 
+5. Additional Environment Notes:
+
+GPU Support: PyTorch detected GPU availability (torch.cuda.is_available() == True)
+
+SpaCy Model: en_core_web_sm used for named entity recognition (masking PERSON entities)
+
+Stop Words: Custom stop words defined for cleaning text
+
+Masking Strategy:
+
+Names: [NAME]
+
+Gendered words: [MASK]
+
+Tokenizer & Model:
+
+BERT tokenizer: bert-base-uncased
+
+BERT model: bert-base-uncased for sequence classification (num_labels=2)
+
+Training Setup:
+
+TrainingArguments: 5 epochs, batch size 8, output directory ./results
+
+Train/test split: 70/30
+
+Evaluation:
+
+Metrics: Accuracy, Recall, Precision, F1
+
+Confusion matrix visualized with Seaborn
+
+Low-confidence and high-confidence analyses based on predicted probabilities
+
+LIME explanations for interpretability on GPU
 
 ##  Workflow for BIAS Project
 
