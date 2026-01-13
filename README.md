@@ -1,6 +1,20 @@
 ## Timeline for submission: 18 January 2026
 
 ----
+## Environment setup
+1. This project requires a Python-based environment configured for large-scale text generation using Azure OpenAI services. The implementation has been tested with Python 3.10+.
+2. -  Core dependencies include pandas for data handling,
+   - python-dotenv for secure environment variable management,
+   - and the official openai Python SDK for interacting with Azure-hosted language models
+3. The following environment variables must be defined in a .env file (e.g., .env.job) or set at the system level:
+   
+AZURE_CHTDP_SWED_ENDPOINT_API_KEY: Azure OpenAI API key
+
+AZURE_CHTDP_SWED_ENDPOINT: Azure OpenAI endpoint URL
+
+AZURE_CHAT_DEPLOYMENT_NAME: Deployment name of the chat model
+
+5. 
 
 ##  Workflow for BIAS Project
 
