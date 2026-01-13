@@ -6,11 +6,11 @@
 2. pip install spacy pandas numpy scikit-learn transformers datasets evaluate torch accelerate matplotlib seaborn lime
 3. The following environment variables must be defined in a .env file (e.g., .env.job) or set at the system level:
    
-      AZURE_CHTDP_SWED_ENDPOINT_API_KEY: Azure OpenAI API key
-      
-      AZURE_CHTDP_SWED_ENDPOINT: Azure OpenAI endpoint URL
-      
-      AZURE_CHAT_DEPLOYMENT_NAME: Deployment name of the chat model
+         AZURE_CHTDP_SWED_ENDPOINT_API_KEY: Azure OpenAI API key
+         
+         AZURE_CHTDP_SWED_ENDPOINT: Azure OpenAI endpoint URL
+         
+         AZURE_CHAT_DEPLOYMENT_NAME: Deployment name of the chat model
 
 5. Additional Environment Notes:
 
