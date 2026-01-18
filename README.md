@@ -67,13 +67,13 @@ Evaluation:
    **Split dataset** per occupation to prepare for generating CVs and cover letters.
    
    * src: gender_profession.ipynb
-   * csvs: folder 'DS_original_separated_per_profession'
+   * csvs: DS_original_separated_per_profession
 3. **Extracting 200 datas in each dataset for each profession with balanced labels(100 male/100 female)
    * src: equal_gendered_ds.ipynb
-   * csvs: folder 'DS_balanced_200'
+   * csvs: DS_balanced_200
 4. Extracting top 20 words on raw datasets of 3 professions using countvectorizer and Logistic regression.
    * src: gender_words_LogisticRegression.ipynb
-   * csvs: folder 'top_20_words_original'
+   * csvs: top_20_words_original
      
 ✅ **Output:** 3 subsets of the dataset (one per occupation) with gender labels.
 
@@ -86,9 +86,9 @@ Evaluation:
    * Job ads for the three occupations.
      * used balanced dataset of professions to extract skill set, education set, experience in years and countries mentioned in bios using PhraseMatcher library of spacy.matcher and "GPE" (Geopolitical Entity)
      * saved extracted attributes in separate dataset named as [profession]_extracted.csv
-       * csvs: folder 'extracted_attributes_per_profession'
+       * csvs: extracted_attributes_per_profession
      * generated job ad per profession using unique attributes extracted originally and using predefined job template. 
-   * src: folder 'JobAd_generation'
+   * src: JobAd_generation
    * texts_generated: '[professions]'
     
    * Corresponding CVs and cover letters for all individuals in your subset (~300 records)
@@ -131,6 +131,8 @@ Evaluation:
    * src: vectorizer_classifier/base_CV_CL
 4. **Modular generation: ** Train and classify on generated modular texts of CV/CL
    * src: vectorizer_classifier/modular_CV_CL
+5. **Record perfomance of baseline model on generated data of each profession using LIME explainer and finding confidence probabilities.
+   * src: performance_base_CV_CL
 
 ✅ **Output:** Classifier capable of predicting gender and occupation from text.
 
@@ -140,7 +142,7 @@ Evaluation:
 
 ### **Step 4: Bias Mitigation**
 
-1. **Mask or remove sensitive and proxy words** in texts.
+1. **Mask sensitive and proxy words** in texts.
     * masked predefined genedered words lists in generated baseline of CV/CL for each profession
 3. **Modify existing CV/CL**.
     * csvs: CV_CL/masked
