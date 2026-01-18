@@ -1,6 +1,4 @@
-## Timeline for submission: 18 January 2026
 
-----
 ## Environment setup
 1. This project requires a Python-based environment configured for large-scale text generation using Azure OpenAI services. The implementation has been tested with Python 3.10+.
 2. pip install spacy pandas numpy scikit-learn transformers datasets evaluate torch accelerate matplotlib seaborn lime
